@@ -1,0 +1,657 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    span {
+        color: tomato;
+        font-weight: 500;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: black;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+    }
+    
+    footer {
+        background-color: black;
+        min-height: 8vh;
+        width: 100%;
+    }
+    
+    .logo {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        font-size: larger;
+    }
+    
+    .nav-links li {
+        list-style: none;
+    }
+    
+    .nav-links a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 2px;
+        background-color: tomato;
+    }
+    
+    a:hover:after,
+    a:focus:after {
+        width: 100%;
+        /*устанавливаем значение 100%, чтобы ссылка подчёркивалась полностью*/
+    }
+    
+    .big_date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
+        width: auto;
+        height: 100vh;
+    }
+    
+    .big_date img {
+        max-width: 350px;
+    }
+    
+    .big_date h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .about_what {
+        display: flex;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        width: auto;
+        padding-left: 60px;
+        padding-right: 50px;
+        margin-bottom: 50px;
+        /* background-color: tomato; */
+    }
+    
+    .about_what img {
+        height: 400px;
+        display: flex;
+    }
+    
+    .about {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .about h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    
+    .about p {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-align: left;
+        font-weight: 300;
+    }
+    
+    .problem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .about_problem h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    
+    .about_problem p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    
+    .problem img {
+        height: 340px;
+    }
+    
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    figure {
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 8px;
+    }
+    
+    .section img {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        border: 2px solid tomato;
+        border-radius: 52%;
+        transition: all 0.3s ease-out;
+    }
+    
+    .section img:hover {
+        transform: scale(1.1)
+    }
+    
+    .work {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 135px;
+        margin-bottom: -20px;
+    }
+    
+    .process_work {
+        display: flex;
+        align-items: center;
+    }
+    
+    .process_work h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 38px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .process_image img {
+        height: 280px;
+    }
+    
+    .idea {
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+    
+    .idea h2 {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    
+    .global_idea {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        max-width: 1000px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .global_idea h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    
+    .step1,
+    .step2,
+    .step3 {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 150px;
+    }
+    
+    .team {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+    
+    .team h1 {
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+    
+    .team_item {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 15px
+    }
+    
+    .seo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 40px;
+    }
+    
+    .action h2 {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+    
+    .action_list {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        max-width: 950px;
+        margin-top: 20px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        line-height: 3rem;
+        margin-bottom: 80px;
+    }
+    
+    .action_list img {
+        height: 380px;
+    }
+    
+    .action_list ol {
+        list-style-type: none;
+        /* Убираем исходные маркеры */
+        counter-reset: my-counter;
+        padding-left: 17px;
+        margin-right: 10px;
+    }
+    
+    .action_list li::before {
+        content: counter(my-counter);
+        /* Выводим число */
+        counter-increment: my-counter;
+        /* Увеличиваем значение счётчика */
+        color: tomato;
+        font-weight: bold;
+        font-style: italic;
+        margin-right: 0.5em;
+        font-size: 24px;
+    }
+    
+    .stey_image {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .stey_image img {
+        height: 450px;
+    }
+    
+    .stey_image li {
+        list-style: none;
+        margin-left: 15px;
+    }
+    
+    .stey_image li:nth-child(1) {
+        border-top: 3px solid tomato;
+    }
+    
+    .stey {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .stey h2 {
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin: 30px;
+    }
+    
+    .question {
+        display: flex;
+        max-width: 900px;
+        background-color: tomato;
+        margin: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        line-height: 40px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .question li {
+        padding-left: 30px;
+        list-style: none;
+    }
+    
+    .question img {
+        height: 300px;
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .question_h2 h2 {
+        text-align: center;
+        margin-top: 100px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    .contact_h2 h2 {
+        text-align: center;
+        margin-top: 100px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    .contact_img img {
+        height: 400px;
+        position: absolute;
+        padding-left: 300px;
+    }
+    
+    .contact {
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: 45px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+    }
+    
+    .contact h2 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .contact p {
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    
+    .contact a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 28px;
+    }
+    
+    .contact h3 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        margin: 10px;
+    }
+    /*  */
+    
+    @media screen and (max-width:849px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        .nav-links li {
+            margin: 6px;
+        }
+        .big_date {
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            max-height: 450px;
+        }
+        .big_date h1 {
+            font-size: 30px;
+        }
+        .big_date img {
+            max-width: 200px;
+        }
+        .about_what {
+            flex-direction: column;
+        }
+        .about_what img {
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .about_what p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .problem {
+            flex-direction: column;
+            max-width: 900px;
+        }
+        .about_problem {
+            background-color: #ff474712;
+        }
+        .problem img {
+            height: 300px;
+        }
+        .problem p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .section {
+            flex-direction: column;
+            max-width: 300px;
+        }
+        .section img {
+            height: 200px;
+            width: 200px;
+            border: none;
+            border-radius: none;
+        }
+        .text:first-letter {
+            color: tomato;
+            font-size: 20px;
+        }
+        .work {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        .process_work h1 {
+            font-size: 28px;
+        }
+        .process_image img {
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        .idea_image img {
+            opacity: 0;
+        }
+        .idea {
+            justify-content: center;
+            margin-right: 95px;
+            color: tomato;
+            font-weight: 400;
+            margin-bottom: -20px;
+            text-transform: uppercase;
+        }
+        .global_idea {
+            flex-direction: column;
+            background-color: #ff474712;
+        }
+        .global_idea h3 {
+            font-weight: 400;
+        }
+        .step1,
+        .step2,
+        .step3 {
+            text-align: center;
+            font-size: 20px;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .team_item {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 15px;
+        }
+        .action_list {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+            line-height: 43px;
+        }
+        .action h2 {
+            margin: 0;
+            font-size: 35px;
+        }
+        .action_list img {
+            height: 250px;
+        }
+        .stey_image img {
+            opacity: 0;
+        }
+        .stey_image {
+            flex-direction: column;
+            margin-top: -430px;
+        }
+        .stey_image ul {
+            max-width: 380px;
+        }
+        .stey h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+        .stey_image li {
+            font-size: 20px;
+            background-color: #ff474712;
+            padding: 5px 20px;
+        }
+        .stey_image li:nth-child(1) {
+            border: none;
+        }
+        .question {
+            flex-direction: column-reverse;
+            background-color: white;
+            align-items: center;
+            color: black;
+            font-size: 20px;
+            margin: 10px;
+            width: 320px;
+            margin: 0 auto;
+        }
+        .question_h2 h2 {
+            font-size: 32px;
+            margin: 20px;
+        }
+        .question img {
+            height: 200px;
+            ;
+        }
+        .question li {
+            list-style: circle;
+        }
+        .contact_h2 h2 {
+            font-size: 32px;
+            margin-top: 10px;
+        }
+        .contact_img img {
+            opacity: 0;
+            margin: -300px;
+        }
+    }
